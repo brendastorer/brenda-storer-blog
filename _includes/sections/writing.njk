@@ -1,0 +1,10 @@
+<section class="writing" id="writing">
+  <div class="writing__content">
+    <h2 class="gradient-heading">
+      Recent articles
+    </h2>
+    {% set postslist = collections.posts | head(-3) %}
+    {% include "components/postslist.njk" %}
+    <a href="{{ '/posts/' | url }}">More Posts</a>
+  </div>
+</section>

@@ -4,10 +4,12 @@ tags:
   - nav
 navtitle: Home
 ---
-
-<h1>Latest 3 Posts</h1>
-
-{% set postslist = collections.posts | head(-3) %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">the archive</a>.</p>
+{% include "sections/hero.njk" %}
+{% include "sections/about.njk" %}
+{% include "sections/projects.njk" %}
+{% include "sections/writing.njk" %}
+<div class="grouped-section">
+  {% include "sections/speaking.njk" %}
+  {% include "sections/podcasts.njk" %}
+</div>
+{% include "sections/contact.njk" %}
