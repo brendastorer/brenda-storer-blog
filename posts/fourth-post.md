@@ -1,9 +1,13 @@
 ---
-title: This is my fourth post.
+title: This is my fourth post
 description: This is a post on My Blog about touchpoints and circling wagons.
 date: 2018-09-30
-tags: second-tag
+tags:
+  - second-tag
+  - css-grid
 layout: layouts/post.njk
+image: /img/post-images/cssgrid-bg.jpg
+image-alt: A photo from TRON by Disney
 ---
 Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 

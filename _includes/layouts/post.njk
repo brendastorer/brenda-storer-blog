@@ -2,8 +2,46 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
-
-{{ content | safe }}
-
-<p><a href="{{ '/' | url }}">← Home</a></p>
+<article class="post">
+  <figure class="post__featured-image-container">
+    <img src="{{ image | url }}" alt="{{ image-alt }}" class="post__featured-image" />
+  </figure>
+  <header class="post__header">
+    <div class="post__meta">
+      <time datetime="{{ post.date | htmlDateString }}">{{ date | readableDate }}</time>
+    </div>
+    <div class="post__title">
+      <h1 class="post__title-solid">
+        {{ title }}
+      </h1>
+      <span class="post__title-outline" aria-hidden="true">
+        {{ title }}
+      </span>
+    </div>
+  </header>
+  <section class="post__body">
+    {{ content | safe }}
+  </section>
+  <ul class="post__tags">
+    {% for tag in tags %}
+      {%- if tag != "posts" -%}
+        {% set tagUrl %}
+          /tags/{{ tag }}/
+        {% endset %}
+        <li>
+          <a href="{{ tagUrl | url }}" class="post_tag">{{ tag }}</a>
+        </li>
+      {%- endif -%}
+    {% endfor %}
+  </ul>
+  <div class="post__socials">
+    {% set twitterUrl %}
+      https://twitter.com/intent/tweet?text=https://brendastorer.com/posts/{{ page.fileSlug }}%20by%20@brendamarienyc
+    {% endset %}
+      <a class="twitter-share-button"
+  href="{{ twitterUrl }}">
+        Tweet
+      </a>
+  </div>
+  <p><a href="{{ '/posts' | url }}">← See all posts</a></p>
+</article>
