@@ -296,7 +296,7 @@ button:hover,
 
 button:focus,
 .button:focus {
-  outline: 3px solid var(--primary-accent-color--with-alpha-50);
+  outline: 3px solid var(--primary-accent-color);
   outline-offset: 2px;
 }
 
@@ -461,8 +461,8 @@ button:disabled:hover,
 }
 
 .projects__list li {
-  margin-bottom: 4rem;
-  transform: rotate(-5deg);
+  margin-bottom: 6rem;
+  transform: rotate(-4.5deg);
 }
 
 @media (min-width: 800px) {
@@ -470,7 +470,7 @@ button:disabled:hover,
     display: grid;
     grid-gap: 0 4rem;
     grid-template-columns: repeat(2, 320px);
-    transform: rotate(-5deg);
+    transform: rotate(-4.5deg);
   }
 
   .projects__list li {
