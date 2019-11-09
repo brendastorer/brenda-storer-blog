@@ -84,7 +84,7 @@
   --posts-list-font-size: 2rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 500px) {
   :root {
     --photo-frame-size: 400px;
     --side-padding: 2rem;
@@ -350,6 +350,10 @@ button:disabled:hover,
   background-color: var(--color-gray--dark);
 }
 
+.no-wrap-text {
+  white-space: nowrap;
+}
+
 /* Browser disclaimer */
 .browser-disclaimer {
   background-color: var(--color-gray--light);
@@ -485,6 +489,7 @@ button:disabled:hover,
 
 /* About */
 .about {
+  overflow: hidden;
   padding: 3rem var(--side-padding) 3rem;
 }
 
