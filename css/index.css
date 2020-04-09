@@ -105,7 +105,7 @@
 
 /* Layout */
 html {
-  background-color: var(--color--white);
+  background-color: var(--dark-background-color);
   box-sizing: border-box;
   font-size: 18px;
 }
@@ -123,7 +123,6 @@ body {
 }
 
 body {
-  background-color: var(--color-white);
   color: var(--base-font-color);
   font-family: var(--font-family--body);
   font-weight: var(--font-weight--body);
@@ -388,6 +387,7 @@ button:disabled:hover,
 
 /* Hero */
 .hero {
+  background-color: var(--color-white);
   font-size: 1rem;
   margin: 1rem auto 0;
   max-width: var(--container-max-width);
@@ -489,6 +489,9 @@ button:disabled:hover,
 
 /* About */
 .about {
+  background-color: var(--color-white);
+  margin: 0 auto;
+  max-width: var(--container-max-width);
   overflow: hidden;
   padding: 3rem var(--side-padding) 3rem;
 }
@@ -497,11 +500,6 @@ button:disabled:hover,
   .about {
     padding-top: 4rem;
   }
-}
-
-.about__content {
-  margin: 0 auto;
-  max-width: var(--container-max-width);
 }
 
 @media (min-width: 900px) {
@@ -589,7 +587,7 @@ button:disabled:hover,
 }
 
 .projects::after {
-  border-color: var(--soft-background-color--secondary) transparent transparent transparent;
+  border-color: var(--soft-background-color--secondary) var(--color-white) var(--color-white) var(--color-white);
   border-style: solid;
   border-width: 240px 3000px 0 0;
   bottom: 0;
@@ -706,6 +704,9 @@ button:disabled:hover,
 
 /* Writing */
 .writing {
+  background-color: var(--color-white);
+  margin: 0 auto;
+  max-width: var(--container-max-width);
   overflow: hidden;
   padding-bottom: 14rem;
   position: relative;
