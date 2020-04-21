@@ -443,8 +443,10 @@ button:disabled:hover,
 }
 
 .navigation a {
+  display: inline-block;
   font-size: 1em;
   line-height: var(--line-height--heading);
+  text-align: center;
 }
 
 .navigation svg {
