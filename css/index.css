@@ -389,9 +389,9 @@ button:disabled:hover,
 .hero {
   background-color: var(--color-white);
   font-size: 1rem;
-  margin: 1rem auto 0;
+  margin: 0 auto;
   max-width: var(--container-max-width);
-  padding: var(--side-padding);
+  padding: 4rem var(--side-padding) var(--side-padding);
 }
 
 @media (min-width: 550px) {
@@ -401,7 +401,7 @@ button:disabled:hover,
     height: 100vh;
     justify-content: space-between;
     max-width: var(--container-max-width);
-    margin-top: 0;
+    padding: var(--side-padding);
   }
 }
 
