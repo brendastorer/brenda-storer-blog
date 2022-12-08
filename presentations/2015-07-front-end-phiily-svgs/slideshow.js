@@ -1,6 +1,6 @@
 /**
  * CSSS javascript code
- * @author Lea Verou (http://lea.verou.me)
+ * @author Lea Verou (https://lea.verou.me)
  * @version 2.1
  */
 
