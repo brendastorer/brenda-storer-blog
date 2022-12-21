@@ -18,11 +18,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;1,300&display=swap" rel="stylesheet">    <link rel="stylesheet" href="{{ '/css/normalize.css' | url }}"> 
+    <link rel="stylesheet" href="{{ '/css/base.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/navigation.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/hero.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/about.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/projects.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/writing.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/speaking-podcasts.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/contact.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/footer.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/posts.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/utilities.css' | url }}">
     <link rel="stylesheet" href="{{ '/css/prism.css' | url }}">
-    <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/overrides.css' | url }}">
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
-  <body>
+  <body class="page--{{ page.fileSlug or 'home' }}">
     <p class="browser-disclaimer">
       This website has been optimized for viewing in a modern web browser. For the best experience, switch to the latest version of Firefox, Safari, or Chrome.
     </p>

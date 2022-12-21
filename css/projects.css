@@ -1,0 +1,118 @@
+.projects {
+  background-color: var(--color-white);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.projects::after {
+  background-color: var(--soft-background-color--secondary);
+  content: "";
+  display: block;
+  clip-path: polygon(0 100%, 100% 0, 0 0, 0 0, 0 0);
+  height: 9vh;
+  position: relative;
+  top: -1px;
+  width: 100%;
+}
+
+.projects__list-container,
+.projects__heading-container {
+  background-color: var(--soft-background-color--secondary);
+  padding: 0 var(--side-padding);
+}
+
+@media (min-width: 800px) {
+  .projects__list-container,
+  .projects__heading-container {
+    background-color: var(--soft-background-color--secondary);
+    padding: 0 4rem;
+  }
+}
+
+.projects__list-container {
+  display: flex;
+}
+
+.projects h2 {
+  margin: 0 auto;
+  max-width: 60rem;
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+
+.projects__list {
+  margin: 0 auto;
+  position: relative;
+  z-index: var(--content-z-index);
+}
+
+.projects__list li {
+  margin-bottom: 6rem;
+  transform: rotate(-4.5deg);
+}
+
+@media (min-width: 800px) {
+  .projects__list {
+    display: grid;
+    grid-gap: 0 4rem;
+    grid-template-columns: repeat(2, 320px);
+    transform: rotate(-4.5deg);
+  }
+
+  .projects__list li {
+    margin-bottom: 0;
+    transform: rotate(0deg);
+  }
+
+  .projects__list li:nth-child(even) {
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .projects__list {
+    grid-template-columns: repeat(3, 320px);
+    max-width: 60rem;
+  }
+
+  .projects__list li:nth-child(even) {
+    margin-top: 0;
+  }
+
+  .projects__list li:nth-child(3n + 2) {
+    margin-top: 2rem;
+  }
+
+  .projects__list li:nth-child(3n) {
+    margin-top: 4rem;
+  }
+}
+
+.projects__title {
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.projects__image {
+  box-shadow: 0 0 13px rgba(93, 78, 115, 0.25);
+  display: block;
+  margin: 0 auto 1rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+.projects a {
+  color: var(--base-font-color);
+}
+
+.projects a:focus {
+  color: var(--primary-accent-color);
+}
+
+.projects a:hover {
+  color: var(--secondary-accent-color);
+}

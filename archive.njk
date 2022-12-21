@@ -2,11 +2,36 @@
 layout: layouts/home.njk
 tags:
   - nav
-navtitle: Archive
-permalink: /posts/
+navtitle: 
+permalink: /blog/
 ---
 
-<h1>Archive</h1>
+<div class="blog-posts">
+  <div class="blog-posts__content">
+    <h1 class="blog-posts__heading gradient-heading">
+      Blog posts
+    </h1>
+    {% set postslist = collections.posts %}
+    {% include "components/postslist.njk" %}
 
-{% set postslist = collections.posts %}
-{% include "components/postslist.njk" %}
+    <ol reversed class="posts-list">
+      <li class="posts-list__item">
+        <a href="https://www.heartinternet.uk/blog/fearless-guide-using-css-grid-today/" target="_blank" rel="noopener" class="posts-list__link">
+          <h3 class="posts-list__title-solid">
+            A fearless guide to using CSS Grid today
+          </h3>
+          <span class="posts-list__title-outline" aria-hidden="true">
+            A fearless guide to using CSS Grid today
+          </span>
+        </a>
+        <time datetime="2017-04-10">April 10, 2017</time> &mdash; <span class="posts-list__meta">Heart Internet</span>
+      </li>
+    </ol>
+  </div>
+  <div class="page-navigation">
+    <a href="/" class="page-navigation__logo-link">
+      {% include "svgs/logo-small.svg" %}
+    </a>
+    {% include "components/navigation.njk" %}
+  </div>
+</div>

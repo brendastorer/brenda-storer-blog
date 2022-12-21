@@ -1,9 +1,9 @@
 ---
-title: This is my first post
-description: This is a post on My Blog about agile frameworks.
-date: 2018-05-01
+title: Why I built a theme for the Shopify Theme Store
+description: tldr; No build process! Pure CSS & JavaScript is cool!
+date: 2022-12-23
 tags:
-  - another-tag
+  - shopify
 layout: layouts/post.njk
 image: /img/post-images/cssgrid-bg.jpg
 ---

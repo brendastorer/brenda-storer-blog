@@ -1,0 +1,31 @@
+.writing {
+  background-color: var(--soft-background-color--primary);
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.writing::after {
+  background-color: var(--color-white);
+  content: "";
+  display: block;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 0, 0 0);
+  height: 9vh;
+  position: relative;
+  top: -1px;
+  width: 100%;
+}
+
+.writing__background {
+  background-color: var(--color-white);
+}
+
+.writing__content {
+  margin: 0 auto;
+  max-width: 55rem;
+  padding: 3rem var(--side-padding);
+}
+
+.writing h2 {
+  margin-bottom: 1.5rem;
+}

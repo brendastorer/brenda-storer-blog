@@ -12,6 +12,7 @@
         <code>{{ post.url }}</code>
       {% endif %}
     </a>
+    <time datetime="{{ post.data.date | htmlDateString }}">{{ post.data.date | readableDate }}</time>
   </li>
 {% endfor %}
 </ol>
