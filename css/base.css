@@ -69,6 +69,12 @@
   --line-height--heading: 1.3;
   --letter-spacing--heading-alt: 0.1em;
 
+  --space-xsmall: 0.33rem;
+  --space-small: 0.66rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+  --space-xlarge: 4rem;
+
   --container-max-width: 100rem;
   --side-padding: 1rem;
   --post-center-column-padding: 2rem;

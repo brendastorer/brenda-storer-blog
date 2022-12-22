@@ -73,10 +73,9 @@
 
 /* Post */
 .post {
-  background-color: var(--color-white);
   display: grid;
   grid-template-columns: 1fr minmax(auto, var(--post-center-column-width)) 1fr;
-  grid-template-rows: 100vh auto;
+  grid-template-rows: 85vh auto;
   font-size: 18px;
 }
 

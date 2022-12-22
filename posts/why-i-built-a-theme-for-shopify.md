@@ -5,7 +5,10 @@ date: 2022-12-23
 tags:
   - shopify
 layout: layouts/post.njk
-image: /img/post-images/cssgrid-bg.jpg
+ogtype: article
+image: /img/post-images/theme-store-highlight-shapes.jpg
+excerpt: tldr; No build process! Pure CSS & JavaScript is cool!
+author: Brenda Storer
 ---
 This is just a test page. Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
 
