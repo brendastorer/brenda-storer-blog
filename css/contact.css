@@ -12,6 +12,7 @@
 
 .contact__heading {
   font-size: var(--section-heading-font-size);
+  text-align: center;
 }
 
 .contact__container {
@@ -46,4 +47,12 @@
 .contact__button-container {
   margin-top: 1rem;
   text-align: center;
+}
+
+.contact__button {
+  --button-text-color: var(--color-white);
+  --button-border-color: var(--color-white--with-alpha-50);
+  --button-text-hover-color: var(--base-font-color);
+  --button-background-hover-color: var(--color-white);
+  --button-border-hover-color: var(--color-white--with-alpha-50);
 }

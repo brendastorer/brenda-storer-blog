@@ -19,11 +19,12 @@ templateClass: tmpl-post
           {{ title }}
         </span>
       </div>
+      {% include "components/postShare.njk" %}
     </header>
     <section class="post__body">
       {{ content | safe }}
     </section>
-    {# <ul class="post__tags">
+    {# <ul class="post__tags list--unstyled" role="list">
       {% for tag in tags %}
         {%- if tag != "posts" -%}
           {% set tagUrl %}
@@ -35,16 +36,13 @@ templateClass: tmpl-post
         {%- endif -%}
       {% endfor %}
     </ul> #}
-    <div class="post__socials">
-      {% set twitterUrl %}
-        https://twitter.com/intent/tweet?text=https://brendastorer.com/posts/{{ page.fileSlug }}%20by%20@brendamarienyc
-      {% endset %}
-        <a class="twitter-share-button" href="{{ twitterUrl }}">
-          Tweet
-        </a>
-    </div>
   </article>
-  <p class="align--text-center space--pb--large">
-    <a href="{{ '/blog' | url }}">See all posts</a>
+  <div class="flex flex--justify-center">
+    {% include "components/postShare.njk" %}
+  </div>
+  <p class="align--text-center space--pv--large">
+    <a href="{{ '/posts' | url }}" class="button">See all posts</a>
   </p>
 </div>
+{% include "sections/contact.njk" %}
+<script src="{{ '/js/social-share.js' | url }}"></script>

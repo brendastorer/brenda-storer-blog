@@ -112,7 +112,7 @@
   background-color: var(--color-white);
   grid-row: 1 / 2;
   grid-column: 2 / 4;
-  padding: 1.5rem var(--post-center-column-padding);
+  padding: 1.25rem var(--post-center-column-padding) 1rem;
 }
 
 @media (max-width: 73ch) {

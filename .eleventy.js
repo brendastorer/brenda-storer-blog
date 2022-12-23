@@ -11,7 +11,7 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(pluginSEO, {
     title: "Brenda Storer",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Brenda Storer is a front-end developer, designer, and CSS entusiast who currently specializes in custom Shopify Themes.",
     url: "https://brendastorer.com",
     author: "Brenda Storer",
     twitter: "brendamarienyc",

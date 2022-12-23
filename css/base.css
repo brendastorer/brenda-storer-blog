@@ -47,7 +47,9 @@
   --color-purple--light: rgb(242, 241, 244);
   --color-gray--light: rgb(200, 210, 214);
   --color-gray--medium: rgb(42, 52, 68);
+  --color-gray--medium--alpha-50: rgba(42, 52, 68, 0.5)
   --color-gray--dark: rgb(36, 39, 41);
+  --gradient--light: linear-gradient(rgba(94, 73, 155, 0.25), rgba(6, 129, 177, 0.25));
 
   --primary-accent-color: var(--color-blue);
   --primary-accent-color--with-alpha-50: var(--color-blue--with-alpha-50);
@@ -56,6 +58,7 @@
   --soft-background-color--primary: var(--color-blue--light);
   --soft-background-color--secondary: var(--color-purple--light);
   --base-font-color: var(--color-gray--medium);
+  --base-font-color--alpha-50: var(--color-gray--medium--alpha-50);
   --dark-background-color: var(--color-gray--medium);
 
   --font-family--body: "Sofia Pro Light", helvetica, arial, sans-serif;
@@ -168,13 +171,20 @@ hr {
 ul,
 ol {
   line-height: 1.35;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 li {
   margin-bottom: 0.75rem;
+}
+
+.list--unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list--unstyled li {
+  margin: 0;
 }
 
 a {
@@ -312,13 +322,20 @@ select:focus {
 /* Buttons */
 button,
 .button {
+  --button-text-color: var(--color-blue);
+  --button-border-color: var(--color-blue--with-alpha-50);
+  --button-text-hover-color: var(--base-font-color);
+  --button-background-hover-color: var(--gradient--light);
+  --button-border-hover-color: var(--base-font-color--alpha-50);
+
   appearance: none;
-  background-color: transparent;
-  border: 2px solid var(--color-white--with-alpha-50);
+  background: transparent;
+  border: 2px solid var(--button-border-color);
   border-radius: 0;
-  color: var(--color-white);
+  color: var(--button-text-color);
   cursor: pointer;
   display: inline-block;
+  fill: currentColor;
   font-family: var(--font-family);
   font-size: 1rem;
   font-weight: var(--font-weight--body);
@@ -326,7 +343,7 @@ button,
   padding: 0.5em 2em 0.7em;
   text-align: center;
   text-decoration: none;
-  transition: background-color 150ms ease;
+  transition: all 250ms ease;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
@@ -334,12 +351,14 @@ button,
 
 button:hover,
 .button:hover {
-  background-color: var(--color-white);
-  color: var(--base-font-color);
+  background: var(--button-background-hover-color);
+  border-color: var(--button-border-hover-color);
+  color: var(--button-text-hover-color);
+  box-shadow: none;
 }
 
-button:focus,
-.button:focus {
+button:focus-visible,
+.button:focus-visible {
   outline: 3px solid var(--primary-accent-color);
   outline-offset: 2px;
 }
@@ -353,7 +372,46 @@ button:disabled,
 
 button:disabled:hover,
 .button:disabled:hover {
-  background-color: var(--color-gray--dark);
+  background: var(--color-gray--dark);
+}
+
+.button--icon {
+  --button-text-color: var(--base-font-color);
+  --button-border-color: transparent;
+
+  align-items: center;
+  appearance: none;
+  background: transparent;
+  border-radius: 0;
+  border: 0;
+  color: var(--button-text-color);
+  display: flex;
+  fill: currentColor;
+  font-size: 1rem;
+  font-weight: normal;
+  height: unset;
+  justify-content: center;
+  line-height: 1.1;
+  margin: 0;
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0;
+  text-align: left;
+  text-decoration-color: transparent;
+  text-decoration: none;
+  text-decoration: underline;
+  transition: all 250s ease;
+  vertical-align: baseline;
+}
+
+.button--icon svg {
+  height: 1.25em;
+  width: 1.25em;
+}
+
+.button--icon:hover {
+  background: var(--gradient--light);
+  box-shadow: none;
 }
 
 .no-wrap-text {
