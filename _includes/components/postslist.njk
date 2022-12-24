@@ -1,4 +1,4 @@
-<ol reversed class="posts-list" style="counter-reset: start-from {{ postslist.length + 1 }}">
+<ol reversed class="posts-list list--unstyled" style="counter-reset: start-from {{ postslist.length + 1 }}" role="list">
 {% for post in postslist | reverse %}
   <li class="posts-list__item{% if post.url == url %} posts-list__item-active{% endif %}">
     <a href="{{ post.url | url }}" class="posts-list__link">   {% if post.data.title %}

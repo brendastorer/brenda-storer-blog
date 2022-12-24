@@ -1,5 +1,5 @@
 /* Posts list */
-.posts-list__item {
+.posts-list .posts-list__item {
   margin-bottom: 1.5rem;
 }
 
@@ -215,4 +215,11 @@
   .blog-posts__heading {
     text-align: left;
   }
+}
+
+.social-share__success-message {
+  background-color: var(--color-white);
+  padding: 0.3em;
+  position: absolute;
+  line-height: 1.1;
 }

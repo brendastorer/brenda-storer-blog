@@ -18,3 +18,8 @@
     padding: 0;
   }
 }
+
+.speaking li,
+.podcasts li {
+  margin-bottom: 1rem;
+}
