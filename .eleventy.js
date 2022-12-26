@@ -2,11 +2,26 @@ const { DateTime } = require("luxon");
 const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginSEO = require("eleventy-plugin-seo");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
+
+  eleventyConfig.addPlugin(pluginSEO, {
+    title: "Brenda Storer",
+    description: "Brenda Storer is a front-end developer, designer, and CSS entusiast who currently specializes in custom Shopify Themes.",
+    url: "https://brendastorer.com",
+    author: "Brenda Storer",
+    twitter: "brendamarienyc",
+    image: "https://brendastorer.com/img/brenda-storer.jpg",
+    options: {
+      twitterCardType: "summary_large_image",
+      imageWithBaseUrl: true,
+      showPageNumbers: false
+    }
+  });
 
   eleventyConfig.addLayoutAlias("post", "layouts/post.njk");
 

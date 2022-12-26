@@ -1,0 +1,73 @@
+.contact {
+  background-color: var(--dark-background-color);
+  color: var(--color-white);
+  padding: 3rem var(--side-padding);
+}
+
+@media (min-width: 600px) {
+  .contact {
+    padding: 5rem;
+  }
+}
+
+.contact__heading {
+  font-size: var(--section-heading-font-size);
+  text-align: center;
+}
+
+.contact__container {
+  margin: 0 auto;
+  max-width: 35rem;
+}
+
+.contact input,
+.contact textarea {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 550px) {
+  .contact__form-grouped {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+.contact__recaptcha-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.contact__recaptcha-container > * {
+  display: inline-block;
+}
+
+.contact__button-container {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact__button {
+  --button-text-color: var(--color-white);
+  --button-border-color: var(--color-white--with-alpha-50);
+  --button-text-hover-color: var(--base-font-color);
+  --button-background-hover-color: var(--color-white);
+  --button-border-hover-color: var(--color-white--with-alpha-50);
+}
+
+.contact__angle-top {
+  background-color: var(--color-white);
+}
+
+.contact__angle-top::after {
+  background-color: var(--dark-background-color);
+  display: block;
+  content: "";
+  clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 100% 0%, 0% 100%);
+  height: 9vh;
+  position: relative;
+  top: 1px;
+  width: 100%;
+}

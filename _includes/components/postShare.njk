@@ -1,0 +1,62 @@
+{% set pageUrl %}https://brendastorer.com/posts/{{ page.fileSlug }}{% endset %}
+<div class="flex flex--align-center">
+  <span class="copy--small space--mr--xsmall">Share:</span> 
+  <social-share data-share-url="{{ pageUrl }}" class="social-share">
+    <ul class="list--unstyled social-share__list flex flex--align-center" role="list">
+      <li>
+        <a
+          href="https://twitter.com/share?url={{ pageUrl }}&amp;text={{ title }} &mdash; by @brendamarienyc"
+          target="_blank"
+          rel="noopener"
+          data-share-link
+          class="button button--icon"
+          aria-label="Share on Twitter">
+          {% include "svgs/icon-twitter-line.svg" %}
+        </a>
+      </li>
+      <li>
+        <a
+          href="https://www.linkedin.com/sharing/share-offsite/?url={{ pageUrl }}"
+          data-share-link
+          target="_blank"
+          rel="noopener"
+          class="button button--icon"
+          aria-label="Share on LinkedIn">
+          {% include "svgs/icon-linkedin-line.svg" %}
+        </a>
+      </li>
+      <li>
+        <a
+          href="http://www.facebook.com/sharer.php?u={{ pageUrl }}"
+          data-share-link
+          target="_blank"
+          rel="noopener"
+          class="button button--icon"
+          aria-label="Share on Facebook">
+          {% include "svgs/icon-facebook-line.svg" %}
+        </a>
+      </li>
+      <li>
+        <a
+          href="mailto:?subject={{ title }} &mdash; Brenda Storer&amp;body=Check out this article. {{ pageUrl }}."
+          target="_blank"
+          rel="noopener"
+          data-share-link
+          class="button button--icon"
+          aria-label="Share over email">
+          {% include "svgs/icon-mail.svg" %}
+        </a>
+      </li>
+      <li>
+        <button data-share-clipboard class="button--icon" aria-label="Copy to clipboard">
+          {% include "svgs/icon-link.svg" %}
+        </button>
+        <div data-success-message class="display--hidden social-share__success-message" role="status" aria-hidden="true">
+          <span class="copy--italic copy--small">
+            Copied to clipboard!
+          </span>
+        </div>
+      </li>
+    </ul>
+  </social-share>
+</div>

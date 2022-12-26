@@ -3,7 +3,7 @@ permalink: /tags/
 layout: layouts/home.njk
 ---
 <h1>Tags</h1>
-<ul class="tags__list">
+<ul class="tags__list list--unstyled" role="list">
   {% for tag in collections.tagList %}
     {% set tagUrl %}/tags/{{ tag }}/{% endset %}
     <li>

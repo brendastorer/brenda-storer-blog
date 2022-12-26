@@ -1,0 +1,119 @@
+.navigation a {
+  align-items: center;
+  display: flex;
+  font-family: var(--font-family--heading);
+  font-size: 1em;
+  font-weight: 400;
+  justify-content: center;
+  letter-spacing: var(--letter-spacing--heading);
+  line-height: var(--line-height--heading);
+}
+
+.navigation__icon-link:hover {
+  box-shadow: none;
+}
+
+.navigation svg {
+  height: 1em;
+  width: 1em;
+}
+
+.navigation__item {
+  display: none;
+}
+
+.navigation__item.navigation__item--socials {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+@media (min-width: 550px) {
+  .navigation__list {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: flex-end;
+  }
+
+  .navigation__item {
+    display: block;
+  }
+
+  .navigation__item.navigation__item--socials {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1050px) {
+  .navigation__list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: flex-end;
+  }
+}
+
+.navigation__item.navigation__item--socials {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 0;
+}
+
+.navigation__item {
+  margin-bottom: 0;
+}
+
+/* Page navigation */
+.page-navigation__logo-link:hover {
+  box-shadow: none;
+}
+
+.page-navigation .logo {
+  display: block;
+  height: auto;
+  max-width: 180px;
+  margin: 0 auto;
+}
+
+.page-navigation .navigation__item {
+  display: none;
+}
+
+.page-navigation .navigation__item--socials {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .page-navigation {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .page-navigation .navigation__item {
+    display: block;
+  }
+  
+  .page-navigation .navigation__item--socials {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .page-navigation .navigation {
+    padding-top: 0;
+  }
+
+  .page-navigation .navigation__list {
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
