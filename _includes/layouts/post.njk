@@ -40,9 +40,10 @@ templateClass: tmpl-post
   <div class="flex flex--justify-center">
     {% include "components/postShare.njk" %}
   </div>
-  <p class="align--text-center space--pv--large">
+  <div class="align--text-center space--pv--large">
     <a href="{{ '/posts' | url }}" class="button">See all posts</a>
-  </p>
+  </div>
 </div>
+<div class="contact__angle-top"></div>
 {% include "sections/contact.njk" %}
 <script src="{{ '/js/social-share.js' | url }}"></script>

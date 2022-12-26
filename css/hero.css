@@ -34,10 +34,7 @@
 }
 
 .hero__subheading {
-  background: currentColor;
   color: var(--primary-accent-color);
-  font-size: 1.08em;
+  font-size: 1.12em;
   margin-bottom: 0.25rem;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }

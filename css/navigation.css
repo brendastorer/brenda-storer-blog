@@ -1,6 +1,16 @@
 .navigation a {
+  align-items: center;
+  display: flex;
+  font-family: var(--font-family--heading);
   font-size: 1em;
+  font-weight: 400;
+  justify-content: center;
+  letter-spacing: var(--letter-spacing--heading);
   line-height: var(--line-height--heading);
+}
+
+.navigation__icon-link:hover {
+  box-shadow: none;
 }
 
 .navigation svg {

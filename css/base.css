@@ -23,6 +23,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Essential Sans";
+  src: url("EssentialSans-VariableVF.woff2") format("woff2 supports variations"),
+       url("EssentialSans-VariableVF.woff2") format("woff2-variations");
+  font-weight: 100 1000;
+}
+
 @keyframes fade-in {
   from {
     opacity: 0;
@@ -62,14 +69,15 @@
   --dark-background-color: var(--color-gray--medium);
 
   --font-family--body: "Sofia Pro Light", helvetica, arial, sans-serif;
-  --font-family--heading: "Sofia Pro Light", helvetica, arial, sans-serif;
+  --font-family--heading: "Essential Sans", "Sofia Pro Light", helvetica, arial, sans-serif;
   --font-family--heading-alt: "Osaka Regular", georgia, serif;
   --font-family--heading-alt-outline: "Osaka Outline";
   --font-weight--bold: 600;
   --font-weight--body: 400;
-  --font-weight--heading: 200;
+  --font-weight--heading: 400;
   --line-height--body: 1.5;
   --line-height--heading: 1.3;
+  --letter-spacing--heading: 0.01em;
   --letter-spacing--heading-alt: 0.1em;
 
   --space-xsmall: 0.33rem;
@@ -81,7 +89,6 @@
   --container-max-width: 100rem;
   --side-padding: 1rem;
   --post-center-column-padding: 2rem;
-  --post-center-column-width: 73ch;
   --photo-frame-size: 300px;
   --section-heading-font-size: 1.25rem;
 
@@ -152,6 +159,7 @@ h5,
 h6 {
   font-family: var(--font-family--heading);
   font-weight: var(--font-weight--heading);
+  letter-spacing: var(--letter-spacing--heading);
   line-height: var(--line-height--heading);
   margin: 0 0 1.25rem;
 }
@@ -180,7 +188,7 @@ li {
 .list--unstyled {
   margin: 0;
   padding: 0;
-  list-style: none;
+  list-style-type: none;
 }
 
 .list--unstyled li {
@@ -377,12 +385,11 @@ button:disabled:hover,
 
 .button--icon {
   --button-text-color: var(--base-font-color);
-  --button-border-color: transparent;
 
   align-items: center;
   appearance: none;
   background: transparent;
-  border-radius: 0;
+  border-radius: 50%;
   border: 0;
   color: var(--button-text-color);
   display: flex;
@@ -411,6 +418,7 @@ button:disabled:hover,
 
 .button--icon:hover {
   background: var(--gradient--light);
+  border: 0;
   box-shadow: none;
 }
 
