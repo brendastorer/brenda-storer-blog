@@ -197,7 +197,9 @@
 
 @media (max-width: 60rem) {
   .post blockquote {
+    background-size: 48px 58px;
     margin: 2rem -0.5rem;
+    padding-left: 3.7rem;
   }
 }
 
