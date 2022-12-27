@@ -50,6 +50,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("js");
   eleventyConfig.addPassthroughCopy("presentations");
   eleventyConfig.addPassthroughCopy("robbie-williams-99");
+  eleventyConfig.addPassthroughCopy("favicon.ico");
 
   /* Markdown Plugins */
   let markdownIt = require("markdown-it");
