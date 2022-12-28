@@ -15,7 +15,7 @@ module.exports = function(eleventyConfig) {
     url: "https://brendastorer.com",
     author: "Brenda Storer",
     twitter: "brendamarienyc",
-    image: "https://brendastorer.com/img/brenda-storer.jpg",
+    image: "/img/brenda-storer-open-graph.png",
     options: {
       twitterCardType: "summary_large_image",
       imageWithBaseUrl: true,

@@ -3,11 +3,11 @@
   "url": "https://brendastorer.com/",
   "description": "Web designer & front-end developer",
   "feed": {
-    "subtitle": "CSS all day, every day.",
+    "subtitle": "Posts from a front-end developer and designer about CSS, Shopify, and pop music, to start.",
     "filename": "feed.xml",
-    "path": "/feed/feed.xml",
-    "url": "https://myurl.com/feed/feed.xml",
-    "id": "https://myurl.com/"
+    "path": "/feed.xml",
+    "url": "https://brendastorer.com/feed.xml",
+    "id": "https://brendastorer.com/"
   },
   "author": {
     "name": "Brenda Storer",
