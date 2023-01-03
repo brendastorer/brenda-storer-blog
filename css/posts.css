@@ -5,7 +5,7 @@
 
 .posts-list__link {
   box-shadow: none;
-  display: inline-block;
+  display: block;
   position: relative;
   margin-top: 0.5rem;
 }
@@ -242,4 +242,16 @@
   padding: 0.3em;
   position: absolute;
   line-height: 1.1;
+}
+
+@media (min-width: 35rem) {
+  .post__small-image {
+    float: left;
+    margin-right: 1rem;
+    width: 50%;
+  }
+}
+
+.post__clearfix {
+  clear: both;
 }
