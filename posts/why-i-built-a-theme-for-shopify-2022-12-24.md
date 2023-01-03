@@ -37,3 +37,5 @@ I've built a non-traditional tech career by following what interests me most. I 
 Now that Whisk is launched I'm not sure where exactly I'm going next, and that's feeling exciting. It was a fun challenge to build my own MVP after preaching the need to &ldquo;start lean&rdquo; to clients for a decade. I definitely don't think I did it perfectly (that journey is another blog post, in progress). I have a million ideas about how to grow the theme, and how to grow my theme agency <a href="https://coquelicot.io/" target="_blank" rel="noopener">Coquelicot</a> but I also have a lot more time and mental energy to take on client work again and I miss the company and collaboration from working with others. Getting this blog going and sharing more is definitely part of the plan.
 
 Drop me a line and let me know if there's anything you'd be interested in hearing more about related to Shopify, themes, solopreneurship, CSS, soap making, etc.
+
+<em style="font-size: 0.85em; line-height: 1.3; display: inline-block;">The top featured photo is a collage of screenshots from the Whisk demo store, "Frulla".</em>
