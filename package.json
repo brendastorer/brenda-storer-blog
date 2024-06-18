@@ -7,6 +7,9 @@
     "watch": "npx eleventy --watch",
     "debug": "DEBUG=* npx eleventy"
   },
+  "engines" : {
+    "node" : "12.13.0"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/11ty/eleventy-base-blog.git"
