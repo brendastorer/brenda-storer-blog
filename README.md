@@ -8,3 +8,5 @@ Command to build and host locally for local development
 ```
 npx eleventy --serve
 ```
+
+Netlify doesn't autodeploy anymore. Drop the entire `_site` folder into drag and drop in Netlify to update the live site.
