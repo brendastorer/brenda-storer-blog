@@ -3,7 +3,8 @@
     <h2 class="contact__heading">
       Say hi!
     </h2>
-    <form class="contact__form" name="brendastorer-contact" data-netlify="true" method="POST">
+    <form class="contact__form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="654913c7-8aac-4c66-91fd-bb8c3fdb10c6">
       <div class="contact__form-grouped">
         <fieldset>
           <label for="name">Name</label>
@@ -16,9 +17,6 @@
       </div>
       <label for="message">Message</label>
       <textarea id="message" name="message"></textarea>
-      <div class="contact__recaptcha-container">
-        <div data-netlify-recaptcha="true"></div>
-      </div>
       <div class="contact__button-container">
         <button type="submit" class="contact__button">Submit</button>
       </div>
